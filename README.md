@@ -173,7 +173,9 @@ keras_retinanet/bin/train.py --tensorboard-dir ~/RetinanetTutorial/TrainingOutpu
 
 we are running with a very small steps value so that you can see the model progress on tensorboard after not many steps. The default value is 10000 and using such as small value will result in creating many snapshot files in ~/RetinanetTutorial/TrainingOutput/snapshots so you may need to delete some of the older ones as it fills up and uses a lot of disk space. If you want to train a useful model, you should set this somewhere between 2000 and 10000 depending on how big your dataset is.
 
-# TrainingTraining will likely around half an hour, depending on your hardware. You will want to open tensorboard to monitor the progress of it. You should also keep an eye on the free disk space where you are saving the model checkpoints, because this can fill up fast and crash your training. Run tensorboard in a new terminal using
+# Training
+
+Training will likely around 2 hrs, depending on your hardware. You will want to open tensorboard to monitor the progress of it. You should also keep an eye on the free disk space where you are saving the model checkpoints, because this can fill up fast and crash your training. Run tensorboard in a new terminal using
 
 tensorboard --logdir ~/RetinanetTutorial/TrainingOutput
 
