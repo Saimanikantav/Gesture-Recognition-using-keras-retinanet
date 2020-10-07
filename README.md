@@ -209,13 +209,15 @@ Before you can run the testDetector.py script you will need to set a few things 
 
 cd ~/RetinanetTutorial/
 
-gedit testDetector.py
+gedit test_keras.py
 
 and set the paths on lines 27,28,29 to point to your new model, a test image and where to save the results. If you used a label other than redPlum you will need to edit line 62.
 
 then run it using
 
-python ../Retinanet-Tutorial/testDetector.py
+python ../Retinanet-Tutorial/test_keras.py
+
+This script will open the webcam and start video feed wchich will be able to detect gestures such as grab and drop.
 
 
 
