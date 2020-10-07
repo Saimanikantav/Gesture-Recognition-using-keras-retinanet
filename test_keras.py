@@ -38,7 +38,7 @@ model = models.load_model(model_path, backbone_name='resnet50' )
 confidence_cutoff = 0.5
 
 # load label to names mapping for visualization purposes
-labels_to_names = {0: 'object in hand', 1: 'no object'}
+labels_to_names = {0: 'grab', 1: 'drop'}
 
 
 #detection from camera
